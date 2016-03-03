@@ -1,0 +1,84 @@
+/*General page stuff - starting point to edit from */
+
+html,
+body,
+div,
+a,
+p,
+img,
+ul,
+li,
+footer,
+header,
+section,
+h1,
+span,
+time,
+hr,
+hgroup,
+a img,
+form,
+input,
+h2,
+h3,
+h4,
+label,
+textarea,
+small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  z-index: 1;
+  -webkit-hyphens: none; 
+  /*outline: 1px dotted green;*/
+}
+
+header,
+section,
+footer {
+  display: block;
+
+}
+
+body {
+  font-size: 80%;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-hyphens: auto;
+  line-height: 190%;
+  background: #fff;
+}
+
+
+.menu {
+  padding: 1em;
+  overflow: auto;
+}
+.menu ul {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  }
+
+p {
+	margin-bottom: 1em;
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+ }
+
+.live{
+	border: 2px solid #333;
+	padding: .5em .8em;
+}
+.live:focus, .live:hover{
+  color: #fff;
+  background-color: #333;
+}
