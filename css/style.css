@@ -30,6 +30,7 @@ small {
   border: 0;
   outline: 0;
   vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
   background: transparent;
   text-decoration: none;
   z-index: 1;
@@ -41,6 +42,7 @@ small {
   -webkit-margin-start: 0em;
   -webkit-margin-end: 0em;
   overflow: auto;
+  -webkit-border-fit: scale;
   /*outline: 1px dotted green;*/
 }
 
@@ -54,13 +56,23 @@ footer {
 body {
   font-size: 100%;
   color: #333;
-  font-family: 'Montserrat', sans-serif;
   -webkit-text-size-adjust: 100%;
   -webkit-hyphens: auto;
   background: #fff;
 }
 
+a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: auto;
+ }
 
+ .drop >ul>p {
+  margin: 1em;
+}
+
+
+/*Nav bar=================================*/
 
 .inner{
   width: 100%;
@@ -69,6 +81,7 @@ body {
   background-color: white;
   padding: 10px 0;
   margin: 0;
+  overflow: visible;
 }
 
 
@@ -79,7 +92,7 @@ body {
 }
 
 .inner li, .inner h1 {
-  line-height: 80px;
+  line-height: 75px;
   background-color: inherit;
   display: inline-block;
   margin:0;
@@ -87,11 +100,36 @@ body {
   float: left;
 }
 
+.inner h1 {
+  margin-left: .3em;
+}
+.inner h1:hover {
+  background-color: none;
+   box-shadow: #333 3px 3px 3px 3px;
+}
+.inner li:hover {
+  box-shadow: #333 5px 5px;
+  overflow: visible;
+}
+
+.inner > ul:last-child { 
+    margin-right:2em; 
+    overflow: visible;   
+}
+
 /*Future drop-down menu-----------------------*/
 
 
 .drop {
   margin: 0px;
+  padding: 0 5px 5px 0;
+}
+
+.drop h1{
+  line-height: 130%:
+  margin-bottom: 1em;
+  position: static;
+  padding: .1em .1em .3em .1em;
 }
 
 .drop ul {
@@ -100,24 +138,31 @@ body {
 }
 
 .drop li{
-  background-color: white;
-  padding: .5em;
+  background-color: lightgrey;
+  padding: .7em;
   margin: .5em .5em .5em 0;
   text-align: center;
   width: 10em;
   height: 10em;
-  font-size: 80%;
-  line-height: 140%;
-   position: relative;
+  font-size: 70%;
+  line-height: 150%;
+  position: relative;
+  box-shadow: #333 5px 5px;
+}
+
+.drop li:hover{
+  background-color: white;
 }
 
 .drop select, .drop textarea, .drop button {
     position: absolute;
     bottom: .7em;
     right: 1em;
+    cursor: pointer;
 }
-
-
+.shadow {
+  box-shadow: #333 5px 5px;
+}
 
 /*Sections of nav bar colors================*/
 .setts {  background-color: cornflowerblue;}
@@ -151,34 +196,108 @@ li:hover.halp {background-color: goldenrod;}
 
 
 
+/*List stuff ================================*/
 
 .meat {background-color: cadetblue;}
+.meat-container {
+  padding: 3em;
+}
 .meat > div {
   text-align: center;
   margin: 20px;
   background-color: white;
 }
 
-
-
-
-
-
-
-p {
-	margin: .7em;
+.meat h4 {
+  /*outline: 2px solid #333;*/
+  min-width: 3em;
+  padding: .4em;
+  margin: 1em auto;
+  background-color: gray;
+  box-shadow: #333 5px 5px;
 }
 
-a:-webkit-any-link {
-    color: inherit;
-    text-decoration: none;
- }
 
-.live{
-	border: 2px solid #333;
-	padding: .5em .8em;
+
+#new_item {
+  background-color: bisque;
+  margin: .4em 1em .2em 1em;
+  border-radius: 15px;
+  padding: 0 10px;
+  line-height: 1.5em;
+  font-size: 30px;
 }
-.live:focus, .live:hover{
-  color: #fff;
-  background-color: #333;
+
+
+
+
+#list {
+    margin-top: 0;
+    padding: 5px 5px 5px 15px;
+    text-align: left;
+    list-style: none;
+}
+
+.meat #list {
+  width:30em;
+  margin:0 auto;
+}
+
+#list > li {
+  background-color: lightgray;
+  border-radius: 15px;
+  padding:.5em;
+  margin:.5em;
+  position: relative;
+}
+
+#list > li:nth-child(odd) {
+  background-color: #4acece;
+}
+
+.meat img.delete {
+  height: 1em;
+  padding:0 .3em;
+  position: absolute;
+    bottom: .7em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.print {
+  text-align: center;
+  min-width: 5em;
+  background-color: white;
+  margin: 2em auto;
+  padding: 0;
+
+}
+
+button.submit {
+  vertical-align: center;
+  display: block;
+  max-width:20em;
+  display: block;
+  margin: 0 auto;
+  padding: .5em;
+}
+
+
+
+
+footer {
+  width: 100%;
+  clear: both;
+  background: #fff;
+  margin: -9px 0 0 0;
+  overflow: inherit;
+}
+footer small {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 1em;
+}
+  .cursive-little{
+    font-family: 'Satisfy', cursive;
 }

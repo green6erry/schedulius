@@ -11,13 +11,13 @@
 
 <header>
 	<div class="inner">
-		<h1>Schedulius!</h1>
-		<ul id="top">
-			<a href="google.com"><li class="setts">Settings</li></a>
-			<a href="google.com"><li class="reset">Reset</li></a>
-			<a href="google.com"><li class="export">Export</li></a>
-			<a href="google.com"><li class="agb">AGB Design</li></a>
-			<a href="google.com"><li class="halp">Halp!</li></a>
+		<a href="www.scheduli.us"><h1>Schedulius!</h1></a>
+		<ul class="top-nav">
+			<a href="#"><li class="setts">Settings</li></a>
+			<a href="#"><li class="reset">Reset</li></a>
+			<a href="#"><li class="export">Export</li></a>
+			<a href="#"><li class="agb">AGB Design</li></a>
+			<a href="#"><li class="halp">Halp!</li></a>
 		</ul>
 	</div>
 </header>
@@ -91,7 +91,7 @@
 				</li>
 			<li>
 				<h1>Facebook</h1>
-				<p>Kinda weird but you be you!</p>
+				<p>Kinda weird but you do you!</p>
 				<button>Share</button>
 			</li>
 		</ul>
@@ -99,14 +99,14 @@
 
 	<div class="drop agb">
 		<ul>
-			<a href="agb.rocks"><li><h1>AGB Design</h1>
+			<li><a href="www.agb.rocks"><h1>AGB Design</h1></a>
 			<p>The Official site for AGB Design.</p>
-			<button>Incredibly Official</button>
-				</li></a>
+			<a href="www.agb.rocks"><button>Incredibly Official</button></a>
+				</li>
 			<li>
 				<h1>Look at my Blog</h1>
-				<p>I <em>will</em> have a blg one day.</p>
-				<button>Look</button>
+				<p>I <em>will</em> have a blog one day.</p>
+				<button>See if I've <br>done it yet...</button>
 				</li>
 			<li>
 				<h1>Like me on Facebook!</h1>
@@ -134,27 +134,62 @@
 		</li>
 		<li>
 			<h1>I'm around!</h1>
-			<p>Contact me if you have any issues or just want to say hey</p>
-			<button> <a href="mailto:green6erry@gmail.com?Subject=I%20have%20a%20thing%20to%20say!" target="newTab">Say a thing!</a> 
-			</button>
+			<p>Contact me if you have any issues. <br><sub>(Or just say "hey")<sub></p>
+			<a href="mailto:green6erry@gmail.com?Subject=I%20have%20a%20thing%20to%20say!" target="newTab" title="Say hey!"><button> Say a thing!
+			</button></a> 
 		</li>
 	</ul>
 </div>
 
 </section>
 
-<section class="meat"> 
-	<div class="intro">
-		<h1>Enter things below :)</h1>
-	</div>
 
-	<div class="list">
-		<p>nice big box</p>
-	</div>
-	<div class="finish">
-		<a id="print-button" href="javascript:window.print()">Print</a>
-	</div>
+
+
+
+<section class="meat"> 
+	<div class="meat-container shadow">
+
+		<h4> Enter a New Item</h4>
+		<p>Enter thing(s) in the tan box below:</p>
+		<input id="new_item">
+		<button class="submit">Submit the thing!</button><br>
+		
+		<h4>Submitted List</h4>
+		
+		<ul id="list" class="">
+			
+			<li class="items shadow">
+				<div class="box"></div>
+				<span>Chicken</span>
+				<img class="delete" src="images/delete.ico">
+			</li>
+						
+			<li class="items shadow">
+				<div class="box"></div>
+				<span>Popcorn</span>
+				<img class="delete" src="images/delete.ico">	
+			</li>
+			
+			<li class="items shadow">
+				<div class="box"></div>
+				<span>Bread</span>
+				<img class="delete" src="images/delete.ico">
+			</li>
+			
+			<li class="items shadow">
+				<div class="box"></div>
+				<span>Milk</span>
+				<img class="delete" src="images/delete.ico">
+			</li>
+
+		</ul>
+	</div>	
 </section>
+	
+<div class="print">
+		<button><a id="print-button" href="javascript:window.print()"><h1>Print!</h1></a></button>
+	</div>
 
   
 
@@ -166,7 +201,7 @@
           var theDate=new Date()
           document.write(theDate.getFullYear())
         </script><br>
-        <span class="cursive-little">(It isn't really, but we'll just say that as if it was...)</span>
+        <span class="cursive-little">(But if you're in to that kind of thing,<br>I hope you like my code!)</span>
       </small>
     </div>
   </footer>
