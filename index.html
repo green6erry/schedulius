@@ -6,25 +6,66 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Satisfy' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+	<script src="http://code.jquery.com/jquery-2.2.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 </head>
 <body>
 
 <header>
 	<div class="inner">
 		<a href="www.scheduli.us"><h1>Schedulius!</h1></a>
-		<ul class="top-nav">
-			<a href="#"><li class="setts">Settings</li></a>
+		<ul id="menu" class="top-nav">
+			<a href="#">
+			<li class="setts">Settings
+				<ul class="drop setts">
+					<li>
+						<h1>Text size</h1>
+						<p>Select on the scale</p>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</li>
+					<li>
+						<h1>Background Color</h1>
+						<p>Select a color below or choose none</p>
+						<select>
+							<option>black</option>
+							<option>blue</option>
+							<option>flowers</option>
+							<option>high-fives</option>
+						</select>
+					</li>
+					<li>
+						<h1>Font</h1>
+						<p>Select a font from below.</p>
+						<select>
+							<option>Times</option>
+							<option>Sans-serif</option>
+							<option>Courier New</option>
+							<option>Cursive</option>
+						</select>
+					</li>
+				</ul>
+			</li>
+
+
+
+	</a>
 			<a href="#"><li class="reset">Reset</li></a>
 			<a href="#"><li class="export">Export</li></a>
 			<a href="#"><li class="agb">AGB Design</li></a>
-			<a href="#"><li class="halp">Halp!</li></a>
+			<a href="http://www.google.com"><li class="halp">Halp!</li></a>
 		</ul>
 	</div>
 </header>
-<section class="drop-menu">
+<section class="hidden drop-menu">
 	
 	<div class="drop setts">
-		<ul>
+		<ul class="drop setts">
 			<li>
 				<h1>Text size</h1>
 				<p>Select on the scale</p>
@@ -144,15 +185,10 @@
 </section>
 
 
-
-
-
 <section class="meat"> 
 	<div class="meat-container shadow">
 
-		<h4> Enter a New Item</h4>
-		<p>Enter thing(s) in the tan box below:</p>
-		<input id="new_item">
+		<input id="new_item" placeholder="Enter New Item here...">
 		<button class="submit">Submit the thing!</button><br>
 		
 		<h4>Submitted List</h4>
@@ -188,7 +224,7 @@
 </section>
 	
 <div class="print">
-		<button><a id="print-button" href="javascript:window.print()"><h1>Print!</h1></a></button>
+		<button><a id="print-button" class="shadow"  href="javascript:window.print()"><h1>Print!</h1></a></button>
 	</div>
 
   

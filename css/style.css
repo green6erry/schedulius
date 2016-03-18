@@ -71,6 +71,13 @@ a:-webkit-any-link {
   margin: 1em;
 }
 
+.hidden{
+  display: none;
+}
+
+  .ui-menu { width: 150px; }
+
+
 
 /*Nav bar=================================*/
 
@@ -154,6 +161,8 @@ a:-webkit-any-link {
   background-color: white;
 }
 
+
+
 .drop select, .drop textarea, .drop button {
     position: absolute;
     bottom: .7em;
@@ -165,9 +174,8 @@ a:-webkit-any-link {
 }
 
 /*Sections of nav bar colors================*/
-.setts {  background-color: cornflowerblue;}
 li.setts { background-color: inherit;}
-li:hover.setts {background-color: cornflowerblue;}
+.setts, li:hover.setts {background-color: cornflowerblue;}
 
 
 
@@ -193,6 +201,13 @@ li:hover.agb {background-color: darkturquoise;}
 .halp {background-color: goldenrod;}
 li.halp; {background-color: inherit;}
 li:hover.halp {background-color: goldenrod;}
+
+/*drop menu attempt ================================*/
+
+.inner ul li:hover (
+  .hidden {
+    display: visible;
+    })
 
 
 
